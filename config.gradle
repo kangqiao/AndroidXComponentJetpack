@@ -1,0 +1,11 @@
+ext {
+    android = [
+            applicationBaseId: "com.zp.androidx.",
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            minSdkVersion    : 21,
+            targetSdkVersion : 29,
+            versionCode      : 1000,
+            versionName      : "1.0.00"
+    ]
+}
