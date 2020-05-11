@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply from: '../../basic.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+}
+
+dependencies {
+    api 'androidx.multidex:multidex:2.0.0'
+    api project(':store:wanandroid')
+
+
+
+    // To get SwipeBack feature, rely on both fragmentation & fragmentation-swipeback
+    api 'me.yokeyword:fragmentationx:1.0.2'
+    // Swipeback is based on fragmentation. Refer to SwipeBackActivity/Fragment for your Customized SupportActivity/Fragment
+    api 'me.yokeyword:fragmentationx-swipeback:1.0.2'
+
+    api 'com.jakewharton.timber:timber:4.7.1'
+}

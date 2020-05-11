@@ -1,0 +1,15 @@
+apply from: '../../module.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 101
+        versionName "1.0.1"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+}
