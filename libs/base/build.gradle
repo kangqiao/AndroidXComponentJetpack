@@ -13,9 +13,6 @@ android {
 
 dependencies {
     api 'androidx.multidex:multidex:2.0.0'
-    api project(':store:wanandroid')
-
-
 
     // To get SwipeBack feature, rely on both fragmentation & fragmentation-swipeback
     api 'me.yokeyword:fragmentationx:1.0.2'

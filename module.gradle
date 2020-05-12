@@ -7,12 +7,23 @@ apply from: "../../basic.gradle"
 
 android {
     defaultConfig {
+        if (project.isRunAlone.toBoolean()) {
+            applicationId rootProject.ext.android.applicationBaseId + project.getName()
+            multiDexEnabled true
+        }
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
         // Enables Jetpack Compose for this module
         compose true
+        dataBinding true
+    }
+    resourcePrefix project.getName() + "_"
+
+    composeOptions {
+        kotlinCompilerVersion "1.3.70-dev-withExperimentalGoogleExtensions-20200424"
+        kotlinCompilerExtensionVersion "$compose_version"
     }
 
     sourceSets {
@@ -29,6 +40,17 @@ android {
 
 dependencies {
     api project(':libs:base')
+    api project(':store:wanandroid')
+
+    api "androidx.ui:ui-core:$compose_version"
+    api("androidx.compose:compose-runtime:$compose_version")
+    api("androidx.ui:ui-framework:$compose_version")
+    api("androidx.ui:ui-layout:$compose_version")
+    api("androidx.ui:ui-material:$compose_version")
+    api("androidx.ui:ui-foundation:$compose_version")
+    api("androidx.ui:ui-animation:$compose_version")
+    api("androidx.ui:ui-tooling:$compose_version")
+    api("androidx.ui:ui-platform:$compose_version")
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

@@ -86,7 +86,7 @@ dependencies {
 
     api project(':libs:base')
 
-    api project(':modules:test')
+    //api project(':modules:test')
 
     kapt "com.alibaba:arouter-compiler:1.2.2"
 
