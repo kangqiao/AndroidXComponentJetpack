@@ -6,9 +6,9 @@ include ':app'
 include 'store:wanandroid'
 
 // 基础包
-include ':libs:base'
+include ':libs:base', ':libs:ext'
 
 // 模块包
-include ':modules:test'
+include ':modules:test', 'modules:home'
 
 rootProject.name = "AndroidXComponentJetpack"

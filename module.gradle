@@ -40,17 +40,8 @@ android {
 
 dependencies {
     api project(':libs:base')
+//    api project(':libs:ext')
     api project(':store:wanandroid')
-
-    api "androidx.ui:ui-core:$compose_version"
-    api("androidx.compose:compose-runtime:$compose_version")
-    api("androidx.ui:ui-framework:$compose_version")
-    api("androidx.ui:ui-layout:$compose_version")
-    api("androidx.ui:ui-material:$compose_version")
-    api("androidx.ui:ui-foundation:$compose_version")
-    api("androidx.ui:ui-animation:$compose_version")
-    api("androidx.ui:ui-tooling:$compose_version")
-    api("androidx.ui:ui-platform:$compose_version")
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

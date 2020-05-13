@@ -2,6 +2,6 @@
     package="com.zp.androidx.home">
 
     <application>
-        <activity android:name=".TestMainActivity"/>
+        <activity android:name=".HomeMainActivity"/>
     </application>
 </manifest>

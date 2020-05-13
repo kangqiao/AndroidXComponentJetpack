@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zp.androidx.home">
+    package="com.zp.androidx.ext">
+
 
     <application>
-        <activity android:name=".TestMainActivity"/>
     </application>
 </manifest>

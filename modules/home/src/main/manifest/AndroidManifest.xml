@@ -2,12 +2,12 @@
     package="com.zp.androidx.home">
 
     <application
-        android:name="com.zp.androidx.home.TestApp"
+        android:name=".HomeApp"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/test_module_name"
+        android:label="@string/home_module_name"
         android:theme="@style/AppTheme"
         >
-        <activity android:name="com.zp.androidx.home.TestMainActivity">
+        <activity android:name=".HomeMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

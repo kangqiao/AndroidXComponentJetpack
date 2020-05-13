@@ -1,0 +1,10 @@
+apply from: '../../module.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 111
+        versionName "1.1.1"
+
+    }
+}

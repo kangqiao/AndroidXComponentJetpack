@@ -1,4 +1,4 @@
-package com.zp.androidx.test
+package com.zp.androidx.home
 
 import android.app.Application
 import com.zp.androidx.base.ModuleApp
@@ -7,7 +7,7 @@ import com.zp.androidx.base.ModuleApp
  * Created by zhaopan on 2020/5/10
  */
 
-class TestApp: ModuleApp() {
+class HomeApp: ModuleApp() {
     override fun onCreate() {
         super.onCreate()
 
