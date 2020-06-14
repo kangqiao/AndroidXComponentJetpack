@@ -64,7 +64,7 @@ fun homeView() {
         val tvMain = tag("tvMain").apply {
             top constrainTo half
         }
-        val btnLoadData = tag("btnLoadData").apply {
+        val btnLoadData = tag("btnLoadData").apply  {
             top constrainTo tvMain.bottom
         }
     }, modifier = Modifier.padding(start = 16.dp, end = 16.dp).fillMaxSize()) {
