@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
-apply from: '../../basic.gradle'
+apply from: '../../lib.gradle'
 
 android {
 
     defaultConfig {
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0"
 
     }
 

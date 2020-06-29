@@ -40,7 +40,7 @@ android {
 
 dependencies {
     api project(':libs:base')
-//    api project(':libs:ext')
+    api project(':libs:ext')
     api project(':store:wanandroid')
 
     testImplementation 'junit:junit:4.12'
