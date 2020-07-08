@@ -31,7 +31,6 @@ class TestMainActivity: BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setSwipeBackEnable(false)
         Timber.d("进入Test")
 
         setContent {

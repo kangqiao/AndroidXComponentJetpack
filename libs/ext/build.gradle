@@ -7,4 +7,5 @@ android {
         versionName "1.1.1"
 
     }
+    resourcePrefix ''
 }

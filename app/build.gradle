@@ -85,8 +85,14 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     api project(':libs:base')
+    api project(':libs:ext')
 
     //api project(':modules:test')
+
+    // Navigation
+    implementation deps.navigation.runtime_ktx
+    implementation deps.navigation.fragment_ktx
+    implementation deps.navigation.ui_ktx
 
     kapt "com.alibaba:arouter-compiler:1.2.2"
 

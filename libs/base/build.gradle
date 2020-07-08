@@ -14,10 +14,12 @@ android {
 dependencies {
     api 'androidx.multidex:multidex:2.0.0'
 
-    // To get SwipeBack feature, rely on both fragmentation & fragmentation-swipeback
-    api 'me.yokeyword:fragmentationx:1.0.2'
-    // Swipeback is based on fragmentation. Refer to SwipeBackActivity/Fragment for your Customized SupportActivity/Fragment
-    api 'me.yokeyword:fragmentationx-swipeback:1.0.2'
+    api project(':store:wanandroid')
 
-    api 'com.jakewharton.timber:timber:4.7.1'
+    // To get SwipeBack feature, rely on both fragmentation & fragmentation-swipeback
+    // api 'me.yokeyword:fragmentationx:1.0.2'
+    // Swipeback is based on fragmentation. Refer to SwipeBackActivity/Fragment for your Customized SupportActivity/Fragment
+    // api 'me.yokeyword:fragmentationx-swipeback:1.0.2'
+
+    api "androidx.startup:startup-runtime:1.0.0-alpha01"
 }
